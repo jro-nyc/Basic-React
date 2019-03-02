@@ -1,0 +1,91 @@
+.myHeader{
+	background:#000;
+	
+	
+}
+.intro{
+	text-align:center;
+	
+}
+.intro h2{
+    margin: 0 20%;
+}
+.intro h3{
+    margin: 30px 20%;
+	color:blue;
+}
+.myHeader a:not(.redirect) {
+  color:#08c;
+  display:inline-block;
+  font-size:20px;
+  margin:25px;
+}
+a.logo{
+	margin:0px 0 0 20px ;
+	padding:3px 0;
+}
+.searchBar{
+	display:inline-block;
+	
+}
+.airportList{
+	color:#000;
+	display:block;
+	background:#fff;
+	font-size:12px;
+    border: #ff0 solid;
+    border-width: 4px;
+	cursor:pointer;
+	
+}
+.matchList{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+}
+a.inactive{
+	color:#ccc !important;
+	text-decoration:none;
+	cursor:default;	
+	font-weight:bold;
+}
+.searchResults{
+	list-style: none;
+	margin: 0;
+    padding: 0;	
+}
+	
+.AirportName{
+	font-size:12px;
+	background: #000;
+	color:#fff;
+	text-decoration:none;	
+}
+.AirportInfo{
+	font-size:12px;
+	background: #fff;
+	color:#000;
+	text-decoration:none;	
+}
+.Info h3{
+	text-align:center
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

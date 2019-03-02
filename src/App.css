@@ -4,13 +4,13 @@
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+  height: 10vmin;
   pointer-events: none;
 }
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,6 +23,303 @@
   color: #61dafb;
 }
 
+.equation{
+	float:left;
+	width:250px;
+}
+#answers,#answersMulDiv{
+	float:left;
+	width:600px;
+}
+#top, #bot{
+	width:150px;
+	text-align:right;	
+}
+.equation{
+	font-size:120px;
+}
+.equation hr{
+	border:9px solid;
+}
+.card{
+	margin-left:100px;
+	display:block;
+}
+.hidden{
+	visibility:hidden;
+}
+.none{
+	display:none;
+}
+.again{
+	clear:both;padding-left:150px;
+}
+.again button{
+	font-size:40px;
+}
+#total{
+	text-align:right;
+	padding-right:30px
+}
+.red{
+	background-color:#fff !important;
+	color:#c00 !important;
+}
+.blue{
+	background-color:#0066ff !important;
+	color:#fff !important;
+}
+.incorrect{
+	font-size: 200px;
+	line-height: 180px;	
+    text-align: center;
+    width: 300px;
+    margin: auto;
+	background-color:#c00;
+	color:#fff;
+}
+.correct{
+	font-size: 200px;
+	line-height: 180px;	
+    text-align: center;
+    width: 300px;
+    margin: auto;
+	background-color:#0066ff;
+	color:#fff;
+}
+.equationContainer {
+	white-space:nowrap;
+}
+
+.equationContainer div{
+	display:inline-block;
+	white-space:nowrap;
+}
+.operation div{
+	font-weight:bold;
+	display:inline-block;
+	white-space:nowrap;	
+}
+.operation {
+	padding-left:90px;
+}
+.operation div{
+	font-size:40px;
+	margin:5px 30px;
+}
+#topSpacer, #botSpacer{
+	width:50px;
+}
+hr{
+	margin:0;
+}
+.mathOperationDiv{
+	height:500px;
+	
+}
+.number-wrapper {
+    display: block;
+    padding: 5px 10px; 
+    text-align: center;
+}
+.numberValues {
+    display: inline-block;
+    width: 2.0em;
+    height: 2.0em;
+    line-height: 2.0em;
+    font-size: 2.5em;
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin: 3px 3px;
+    background: #ddd;
+    color: #333;
+    cursor: pointer;
+    box-sizing: content-box;
+}
+.fractContainer{
+    display: inline-block;
+    width: 2.0em;
+    height: 2.0em;
+    line-height: inherit;
+    font-size: 2.5em;
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin: 3px 3px;
+    background: #ddd;
+    color: #333;
+    cursor: pointer;
+    box-sizing: content-box;
+}
+.fraction {
+	display: inline-block;
+	position: relative;
+	vertical-align: middle; 
+	letter-spacing: 0.001em;
+	text-align: center;
+	font-size: .7em;
+}
+.fraction > span { 
+	display: block; 
+	padding: 0.1em; 
+}
+.fraction span.fdn {
+	border-top: thin solid black;
+}
+.fraction span.bar {
+	display: none;
+}
+	/************************** HIDING AGAIN BUTTON FOR NOW ****************/
+.again, .hide, #MultDiv{display:none;}	
+    input[type=radio] {
+    border: 0px;
+    width: 50px;
+    height: 2em;
+}
+.show{
+	display:block !important;
+}
+#MultDiv{
+	text-align:right;
+}
+.wrong{
+	text-decoration:line-through;
+}
+#celebration{
+	display:none;
+	position:fixed;
+	z-index:5000;
+	background-image:url(./boys/celebration.gif);
+	background-repeat:no-repeat;
+	background-size:100%;
+	height:100%;
+	width:100%;
+
+}
+#celebration img{
+	width:100%;
+
+}
+#celebration div{
+	font-size:70px;
+	color:#0f8;
+	_text-align:center;
+	_width:100%;
+}
+.messages{display:none;}
+#initial{
+	position:fixed;
+	z-index:6000;
+	background-color:#fff;
+	height:100%;
+	width:100%;
+}
+#initial div{
+	font-size:70px;
+	color:#000;
+	_text-align:center;
+	_width:100%;
+}
+.operationArea{
+	_float:left;
+}
+#results{
+    position: fixed;
+    background: #fff;
+    z-index: 999;
+    margin: 0 200px;
+    left: 350px;
+	top:0px;
+	min-height:500px;
+	display:none;
+}
+#results td{
+	border:2px solid black;
+	margin:5px;
+	padding: 5px;
+
+}
+#results th{
+	border:2px solid black;
+	margin:5px;
+	padding: 5px;
+
+}
+#currentResult th{
+	text-align:center;
+	border:1px solid black;
+
+}
+#currentResult td{
+	text-align:center;
+	border:1px solid black;
+	color:blue;
+}
+#futbol{
+	background-image:url(./boys/pl.18.19.jpeg);
+    background-position: -70px -160px;
+    background-repeat: no-repeat;
+    height: 315px;
+    width: 700px;
+    _padding-left: 25px;
+}
+#futbol .team-wrapper  li{
+	width:100px;
+	height:105px;
+	display:inline-block;
+	font-size:8px;
+	list-style:none;
+	
+}
+#futbol .team-wrapper  li.picked{
+	background:#900;
+}
+#futbol .team-wrapper ul{
+    margin: 0px;
+    margin-block-start: 0px;
+    padding-inline-start: 0px;
+}
+#futbol .team-wrapper .teamValues {
+    cursor: pointer;
+}
+#futbol .team-wrapper .lvp{
+	background-image:url(./boys/liverpool.png);
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: 17px;	
+}
+#football{
+	display:none;
+	background-image:url(./boys/nfl.jpg);
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    background-size: 100%;	
+    height: 555px;
+    width: 700px;
+    _padding-left: 25px;	
+}
+#football .team-wrapper  li{
+    width: 14.28%;
+    height: 18%;
+	display:inline-block;
+	font-size:8px;
+	list-style:none;
+	
+}
+#football .team-wrapper  li.picked{
+	background:#000;
+}
+#football .team-wrapper ul{
+    margin: 0px;
+    margin-block-start: 0px;
+    padding-inline-start: 0px;
+}
+#football .team-wrapper .teamValues {
+    cursor: pointer;
+}
+.welcome{
+    font-size: 40px;
+    padding-left: 120px;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
