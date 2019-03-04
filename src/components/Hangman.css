@@ -1,0 +1,184 @@
+
+.game-board{
+  padding:0px 0 0 20px;
+
+}
+svg.noose .inactive {
+    stroke: #f24222;
+	stroke-dasharray:7;
+	opacity:.5;
+}
+svg.noose * {
+    fill: none;
+    stroke: #000;
+    stroke-width: 5;
+    stroke-miterlimit: 10;
+}
+svg.noose .inactive.win, svg.noose .inactive.lose{
+    display: none;
+}
+
+#alpha_btns {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    list-style: none;
+    text-align: center;
+    _margin: 0 auto 1rem;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    _justify-content: center;
+    font-size: 1.25rem;
+    line-height: 1em;
+}
+#alpha_btns li {
+    margin: 0;
+    padding: 0;
+    width: 1em;
+    padding: 0.2em;
+    margin: 0.1em;
+    text-align: center;
+    background: #FF6;
+    color: black;
+    border-radius: 0.25em;
+    cursor: pointer;
+    box-shadow: rgba(0,0,0,0.5) 1px 1px;
+}
+#alpha_btns {
+    font-size: 1.9rem;
+    line-height: 1em;
+    max-width: 440px;
+}
+#word {
+    margin: 0.5rem 0 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    _justify-content: center;
+    font-size: 1.9rem;
+    line-height: 1.5em;
+    max-width: 100%;
+    overflow-x: auto;
+}
+#word>span {
+    margin: 0 0.25em;
+    white-space: nowrap;
+}
+#word>span>span.hide {
+    text-indent: -100vw;
+    border-color: #000;
+}
+.letter{
+	color:#fff !important;
+	border-bottom:#000 solid !important;
+}
+.foundLetter{
+	color:#088 !important;
+}
+.missedLetter{
+	color:#C00 !important;
+	border-bottom:#C00 solid !important;
+}
+#word>span>span:first-child {
+    margin-left: 0;
+}
+#word>span>span {
+    display: inline-block;
+    border-bottom: solid 3px transparent;
+    width: 1em;
+    vertical-align: top;
+    margin-left: 4px;
+    text-align: center;
+    overflow: hidden;
+    color: #000;
+	text-transform: uppercase;
+}
+.noosecanvas {
+    position: relative;
+    margin: 1rem 0;
+    _text-align: center;
+	width:440px;
+}
+.noosecanvas svg{
+    height:200px
+}
+.game{
+    padding:20px 0 0 20px;
+}
+.clickedLetter{
+    background: #FFF !important;
+    color: #C00  !important;
+    box-shadow: none !important;
+    _text-decoration: underline !important;
+    border-bottom: #C00 solid;
+    border-radius: 0px !important;
+}
+.matchedLetter{
+    background: #FFF !important;
+    color: #088   !important;
+    box-shadow: none !important;
+    border-radius: 0px !important;
+}
+#alpha_btns li.bad {
+    color: #c66;
+}
+.hangmanContainer{
+	margin-top:100px;
+}
+#alpha_btns li.good, #alpha_btns li.bad {
+    border-color: transparent;
+    cursor: default;
+    background: none !important;
+    box-shadow: none;
+}
+.show-new-word {
+    cursor: pointer;
+    _position: absolute;
+    _left: 150px;
+    _top: 120px;
+	width:100px;
+	margin: 10px 145px;
+    background: #06c;
+    border-radius: 30px;
+    padding: 1.25em 1.5em;
+    color: #fff;
+}
+.lives-left {
+    font-size: 26px;
+    display: block;
+    text-align: center;
+}
+.few-lives{
+    font-size: 26px;
+    color:#C00;
+    display: block;
+    text-align: center;
+}
+.lives  h4{
+    font-size: 10px;
+    margin:0px;
+    text-align: center;
+}
+.lives {
+    cursor: pointer;
+    _position: absolute;
+    _left: 183px;
+    _top: 40px;
+	width:100px;
+	margin: 10px 160px;
+    background: #6Bf;
+    padding: 0.25em 0.5em;
+    color: #fff;
+}
+.new-word, .opOff {
+    display: none;
+}
+
+.mainContainer{
+	width:440px;
+}
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

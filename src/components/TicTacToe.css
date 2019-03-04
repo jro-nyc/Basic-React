@@ -1,0 +1,59 @@
+
+.TicTacToe{
+  padding:0px 0 0 20px;
+
+}
+.TicTacToe ul{
+	width: 470px !important;
+	height: 470px !important;	
+}
+.TicTacToe li{
+	text-align:center;
+	vertical-align:middle;
+	line-height:150px;
+	font-size:100px;
+	
+}
+.winner{
+	background: #F00 !important;
+	
+}
+.tie{
+	background: linear-gradient(90deg, rgba(255,255,255,0.3) 50%, rgba(0,0,0,0) 50%, rgba(0,0,0,0) 0), #ccc !important;
+	background-size:10px auto !important;
+}
+li.top{
+    width: 150px;
+    list-style: none;
+    background: #fff;
+    height: 150px;
+    display: inline-block;
+	border-bottom:3px solid black;
+}
+li.middle{
+    width: 150px;
+    list-style: none;
+    background: #fff;
+    height: 150px;
+    display: inline-block;
+	border-bottom:3px solid black;
+	border-top:3px solid black;
+}
+li.bottom{
+    width: 150px;
+    list-style: none;
+    background: #fff;
+    height: 150px;
+    display: inline-block;
+	border-top:3px solid black;
+}
+li.left{
+	border-right:3px solid black;
+}
+li.center{
+	border-right:3px solid black;
+	border-left:3px solid black;
+}
+li.right{
+	border-left:3px solid black;
+}
