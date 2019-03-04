@@ -28,7 +28,8 @@ class MyHeader extends React.Component {
 					<a href="/MathOperation" className={this.determineClass('/MathOperation')}>MathOperation</a>
 					<a href="/Hangman" className={this.determineClass('/Hangman')}>Hangman</a>					
 					<a href="/App" className={this.determineClass('/App')}>Both</a>	
-					<a href="/TicTacToe" className={this.determineClass('/TicTacToe')}>TicTacToe</a>						
+					<a href="/TicTacToe" className={this.determineClass('/TicTacToe')}>TicTacToe</a>	
+					<a href="/Calculator" className={this.determineClass('/Calculator')}>Calculator</a>					
 					<AirportToSports/>
 				</div>
 				<div>

@@ -9,6 +9,7 @@ import MathOperation from './MathOperation';
 import Hangman from './components/Hangman';
 import Info from './components/Info';
 import TicTacToe from './components/TicTacToe';
+import Calculator from './components/Calculator';
 import * as serviceWorker from './serviceWorker';
 
 //Standard APP below
@@ -46,6 +47,7 @@ ReactDOM.render((
 			<Route path = "/App" component = {App} />
 			<Route path = "/Info" component = {Info} />
 			<Route path = "/TicTacToe" component = {TicTacToe} />
+			<Route path = "/Calculator" component = {Calculator} />			
 		 
 		</div>
 		
